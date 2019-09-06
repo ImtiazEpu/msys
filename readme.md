@@ -26,4 +26,4 @@ Simple Management System is an open source management system using Laravel.
 
 ## License
 
-The E-Shopper is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Simple Management System is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
