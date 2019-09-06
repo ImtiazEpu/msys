@@ -5,6 +5,7 @@ Simple Management System is an open source management system using Laravel.
 - [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar)
 - [Laravel IDE helper for PhpStorm](https://github.com/barryvdh/laravel-ide-helper)
 - [Doctrine Database Abstraction Layer](https://github.com/doctrine/dbal)
+- [laravel/ui](https://laravel.com/docs/6.0/frontend)
 
 ## Installation instruction
 
