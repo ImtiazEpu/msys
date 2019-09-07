@@ -6,9 +6,10 @@
         <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
             <div class="container px-4">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="{{asset('img/brand/white.png')}}" />
+                    <img src="{{asset('img/brand/white.png')}}"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-collapse-main">
@@ -21,7 +22,9 @@
                                 </a>
                             </div>
                             <div class="col-6 collapse-close">
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                        data-target="#navbar-collapse-main" aria-controls="sidenav-main"
+                                        aria-expanded="false" aria-label="Toggle sidenav">
                                     <span></span>
                                     <span></span>
                                 </button>
@@ -59,7 +62,8 @@
                 </div>
             </div>
             <div class="separator separator-bottom separator-skew zindex-100">
-                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg">
                     <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
                 </svg>
             </div>
@@ -73,11 +77,13 @@
                             <div class="text-muted text-center mt-2 mb-3"><small>{{__('Sign in with')}}</small></div>
                             <div class="btn-wrapper text-center">
                                 <a href="#" class="btn btn-neutral btn-icon">
-                                    <span class="btn-inner--icon"><img src="{{asset('img/icons/common/github.svg')}}"></span>
+                                    <span class="btn-inner--icon"><img
+                                            src="{{asset('img/icons/common/github.svg')}}"></span>
                                     <span class="btn-inner--text">{{__('Github')}}</span>
                                 </a>
                                 <a href="#" class="btn btn-neutral btn-icon">
-                                    <span class="btn-inner--icon"><img src="{{asset('img/icons/common/google.svg')}}"></span>
+                                    <span class="btn-inner--icon"><img
+                                            src="{{asset('img/icons/common/google.svg')}}"></span>
                                     <span class="btn-inner--text">{{__('Google')}}</span>
                                 </a>
                             </div>
@@ -94,7 +100,10 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                         </div>
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email">
+                                        <input id="email" type="email"
+                                               class="form-control @error('email') is-invalid @enderror" name="email"
+                                               value="{{ old('email') }}" required autocomplete="email" autofocus
+                                               placeholder="Email">
 
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -108,7 +117,10 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                         </div>
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Password">
+                                        <input id="password" type="password"
+                                               class="form-control @error('password') is-invalid @enderror"
+                                               name="password" required autocomplete="current-password"
+                                               placeholder="Password">
 
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
@@ -118,7 +130,8 @@
                                     </div>
                                 </div>
                                 <div class="custom-control custom-control-alternative custom-checkbox">
-                                    <input class="custom-control-input" name="remember" id=" customCheckLogin" type="checkbox" {{ old('remember') ? 'checked' : '' }}>
+                                    <input class="custom-control-input" name="remember" id=" customCheckLogin"
+                                           type="checkbox" {{ old('remember') ? 'checked' : '' }}>
                                     <label class="custom-control-label" for=" customCheckLogin">
                                         <span class="text-muted">{{ __('Remember Me') }}</span>
                                     </label>
@@ -131,7 +144,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-6">
-                            <a href="{{ route('password.request') }}" class="text-light"><small>{{ __('Forgot Your Password?') }}</small></a>
+                            <a href="{{ route('password.request') }}"
+                               class="text-light"><small>{{ __('Forgot Your Password?') }}</small></a>
                         </div>
                         <div class="col-6 text-right">
                             <a href="#" class="text-light"><small>{{__('Create new account')}}</small></a>
@@ -145,7 +159,8 @@
                 <div class="row align-items-center justify-content-xl-between">
                     <div class="col-xl-6">
                         <div class="copyright text-center text-xl-left text-muted">
-                            © 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative Tim</a>
+                            © 2018 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative
+                                Tim</a>
                         </div>
                     </div>
                     <div class="col-xl-6">
@@ -154,13 +169,15 @@
                                 <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                                <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About
+                                    Us</a>
                             </li>
                             <li class="nav-item">
                                 <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
+                                <a href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md"
+                                   class="nav-link" target="_blank">MIT License</a>
                             </li>
                         </ul>
                     </div>
