@@ -81635,6 +81635,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! chart.js */ "./node_modules/chart.js/dist/Chart.js");
 
+__webpack_require__(/*! ./argon-dashboard.min */ "./resources/js/argon-dashboard.min.js");
+
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
  * The following block of code may be used to automatically register your
@@ -82365,14 +82367,13 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/js/argon-dashboard.min.js ./resources/sass/app.scss ***!
-  \***************************************************************************************************/
+/*!*************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/imtiaz/Code/msys/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /home/imtiaz/Code/msys/resources/js/argon-dashboard.min.js */"./resources/js/argon-dashboard.min.js");
 module.exports = __webpack_require__(/*! /home/imtiaz/Code/msys/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
