@@ -15,7 +15,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return 'User Index Page';
+        return view('admin.users.dashboard');
     }
 
     /**
