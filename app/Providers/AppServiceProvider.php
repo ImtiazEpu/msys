@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Facade\Ignition\Ignition;
 use Illuminate\Support\ServiceProvider;
+use Mazedlx\MigrationsTab\MigrationsTab;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Ignition::tab(new MigrationsTab);
     }
 }
