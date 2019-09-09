@@ -179,6 +179,7 @@
                                     <th scope="col">{{__('No')}}</th>
                                     <th scope="col">{{__('Nmae')}}</th>
                                     <th scope="col">{{__('Email')}}</th>
+                                    <th scope="col">{{__('Roles')}}</th>
                                     <th scope="col">{{__('Action')}}</th>
                                 </tr>
                                 </thead>
@@ -195,8 +196,15 @@
                                         {{$user->email}}
                                     </td>
                                     <td>
-                                        <a href="{{route('admin.users.edit',$user->id)}}"><button type="button" class="btn btn-info">Edit</button></a>
-                                        <a href="{{route('admin.users.destroy',$user->id)}}"><button type="button" class="btn btn-danger">Delete</button></a>
+                                        <span class="badge badge-pill badge-info">{{implode(',  ',$user->roles()->get()->pluck('name')->toArray())}}</span>
+                                    </td>
+                                    <td>
+                                        <a href="{{route('admin.users.edit',$user->id)}}"><button type="button" class="btn btn-info float-left mr-3">Edit</button></a>
+                                        <form action="{{route("admin.users.destroy",$user->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger float-left">Delete</button>
+                                        </form>
                                     </td>
                                 </tr>
                                     @endforeach
