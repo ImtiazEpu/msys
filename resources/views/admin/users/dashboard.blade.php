@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="container-fluid mt--7">
-            <div class="row">
+            {{--<div class="row">
                 <div class="col-xl-8 mb-5 mb-xl-0">
                     <div class="card bg-gradient-default shadow">
                         <div class="card-header bg-transparent">
@@ -157,17 +157,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>--}}
             <div class="row mt-5">
-                <div class="col-xl-8 mb-5 mb-xl-0">
+                <div class="col-xl-12 mb-5 mb-xl-0">
                     <div class="card shadow">
                         <div class="card-header border-0">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <h3 class="mb-0">Page visits</h3>
+                                    <h3 class="mb-0">{{__('User List')}}</h3>
                                 </div>
                                 <div class="col text-right">
-                                    <a href="#!" class="btn btn-sm btn-primary">See all</a>
+                                    <a href="#!" class="btn btn-sm btn-primary">{{__('See all')}}</a>
                                 </div>
                             </div>
                         </div>
@@ -176,89 +176,27 @@
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                 <tr>
-                                    <th scope="col">Page name</th>
-                                    <th scope="col">Visitors</th>
-                                    <th scope="col">Unique users</th>
-                                    <th scope="col">Bounce rate</th>
+                                    <th scope="col">{{__('Nmae')}}</th>
+                                    <th scope="col">{{__('Email')}}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($users as $user)
                                 <tr>
                                     <th scope="row">
-                                        /argon/
+                                        {{$user->name}}
                                     </th>
                                     <td>
-                                        4,569
-                                    </td>
-                                    <td>
-                                        340
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
+                                        {{$user->email}}
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/index.html
-                                    </th>
-                                    <td>
-                                        3,985
-                                    </td>
-                                    <td>
-                                        319
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/charts.html
-                                    </th>
-                                    <td>
-                                        3,513
-                                    </td>
-                                    <td>
-                                        294
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/tables.html
-                                    </th>
-                                    <td>
-                                        2,050
-                                    </td>
-                                    <td>
-                                        147
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                        /argon/profile.html
-                                    </th>
-                                    <td>
-                                        1,795
-                                    </td>
-                                    <td>
-                                        190
-                                    </td>
-                                    <td>
-                                        <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
-                                    </td>
-                                </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                {{--<div class="col-xl-4">
                     <div class="card shadow">
                         <div class="card-header border-0">
                             <div class="row align-items-center">
@@ -385,7 +323,7 @@
                             </table>
                         </div>
                     </div>
-                </div>
+                </div>--}}
             </div>
             @include('admin.users.partials._footer')
         </div>

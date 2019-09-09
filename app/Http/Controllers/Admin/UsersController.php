@@ -8,6 +8,10 @@ use App\Http\Controllers\Controller;
 
 class UsersController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +19,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return view('admin.users.dashboard');
+        $user = User::all();
+        return view('admin.users.dashboard')->with('users',$user);
     }
 
     /**
