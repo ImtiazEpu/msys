@@ -176,18 +176,27 @@
                             <table class="table align-items-center table-flush">
                                 <thead class="thead-light">
                                 <tr>
+                                    <th scope="col">{{__('No')}}</th>
                                     <th scope="col">{{__('Nmae')}}</th>
                                     <th scope="col">{{__('Email')}}</th>
+                                    <th scope="col">{{__('Action')}}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($users as $user)
                                 <tr>
                                     <th scope="row">
-                                        {{$user->name}}
+                                        {{$user->id}}
                                     </th>
                                     <td>
+                                        {{$user->name}}
+                                    </td>
+                                    <td>
                                         {{$user->email}}
+                                    </td>
+                                    <td>
+                                        <a href="{{route('admin.users.edit',$user->id)}}"><button type="button" class="btn btn-info">Edit</button></a>
+                                        <a href="{{route('admin.users.destroy',$user->id)}}"><button type="button" class="btn btn-danger">Delete</button></a>
                                     </td>
                                 </tr>
                                     @endforeach
