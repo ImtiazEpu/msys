@@ -15,5 +15,7 @@ mix.styles([
     'resources/css/nucleo/css/nucleo.css',
     'resources/css/argon-dashboard.css'
     ], 'public/css/app.css')
-    .js('resources/js/app.js', 'public/js/app.js')
-   .sass('resources/sass/app.scss','public/css/app.css');
+    .sass('resources/sass/app.scss','public/css/fontawesome.css')
+    .js('resources/js/app.js', 'public/js/app.js');
+
+
