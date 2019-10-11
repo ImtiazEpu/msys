@@ -9,6 +9,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Favicon -->
     <link href="{{asset('img/brand/favicon.png')}}" rel="icon" type="image/png">
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/fontawesome.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 

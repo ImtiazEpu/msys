@@ -171,7 +171,7 @@
                                class="text-light"><small>{{ __('Forgot Your Password?') }}</small></a>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#" class="text-light"><small>{{__('Create new account')}}</small></a>
+                            <a href="#" class="text-light"><small>{{__('Already have an account? Login')}}</small></a>
                         </div>
                     </div>
                 </div>

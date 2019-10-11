@@ -5,7 +5,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
             <div class="container px-4">
-                <a class="navbar-brand" href="../index.html">
+                <a class="navbar-brand" href="{{route('home')}}">
                     <img src="{{asset('img/brand/white.png')}}"/>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
@@ -17,7 +17,7 @@
                     <div class="navbar-collapse-header d-md-none">
                         <div class="row">
                             <div class="col-6 collapse-brand">
-                                <a href="../index.html">
+                                <a href="{{route('home')}}">
                                     <img src="{{asset('img/brand/blue.png')}}">
                                 </a>
                             </div>
@@ -148,7 +148,7 @@
                                class="text-light"><small>{{ __('Forgot Your Password?') }}</small></a>
                         </div>
                         <div class="col-6 text-right">
-                            <a href="#" class="text-light"><small>{{__('Create new account')}}</small></a>
+                            <a href="{{route('register')}}" class="text-light"><small>{{__('Create new account')}}</small></a>
                         </div>
                     </div>
                 </div>
